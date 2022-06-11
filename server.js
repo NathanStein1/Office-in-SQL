@@ -4,7 +4,7 @@ const fs = require('fs')
 const app = express();
 const PORT = 3001;
 const path = require('path');
-
+const inquire = require('inquirer')
 
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
@@ -13,7 +13,7 @@ const db = mysql.createConnection(
     {
       host: 'localhost',
       user: 'root',
-      password: 'Candyland123',
+      password: '',
       database: 'movies_db'
     },
     console.log(`Connected to the movies_db database.`)
