@@ -2,7 +2,7 @@ const express = require('express');
 const mysql = require('mysql2');
 const fs = require('fs')
 const app = express();
-const PORT = 3001;
+const PORT = process.env.PORT || 3001;
 const path = require('path');
 const inquire = require('inquirer')
 
@@ -13,10 +13,10 @@ const db = mysql.createConnection(
     {
       host: 'localhost',
       user: 'root',
-      password: '',
-      database: 'movies_db'
+      password: 'Candyland123',
+      database: 'office_db'
     },
-    console.log(`Connected to the movies_db database.`)
+    console.log(`Connected to the office_db database.`)
   );
 
 app.get('/api/movies', (req,res) => {
