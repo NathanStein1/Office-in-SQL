@@ -5,13 +5,13 @@ CREATE DATABASE office_db;
 USE office_db;
 
 CREATE TABLE department (
-  id INT NOT NULL,
-  name_ VARCHAR (30) NOT NULL,
+  id INT NOT NULL AUTO_INCREMENT,
+  name VARCHAR (30) NOT NULL,
   PRIMARY KEY (id)
 );
 
 CREATE TABLE role (
-  id INT PRIMARY KEY,
+  id INT AUTO_INCREMENT PRIMARY KEY,
   title VARCHAR(30),
   salary DECIMAL,
   department_id INT,
@@ -21,7 +21,7 @@ CREATE TABLE role (
 );
 
 CREATE TABLE employee (
-  id INT,
+  id INT AUTO_INCREMENT,
   first_name VARCHAR(30),
   last_name VARCHAR(30),
   role_id INT,
@@ -31,4 +31,4 @@ CREATE TABLE employee (
   REFERENCES role(id),
   FOREIGN KEY (manager_id)
   REFERENCES employee(id)
-  
+);
