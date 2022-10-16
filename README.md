@@ -2,9 +2,12 @@
 
 Author: Nathan Stein
 
+# Usage
+See it in action here -> [link](https://drive.google.com/file/d/1YGdd-_ho3eEETQsQodwBeBh0-1bXV5xC/view?usp=sharing)
+
 # About
 
-This project utilizes SQL to create a table that could be used at a company to manage employees and keep track of their roles, salary, etc. This can all be run using the console to both read the tables as well as make any additions that you might wish to make. Run the program by typing 'node index.js' in a terminal. See it in action here -> [link](https://drive.google.com/file/d/1YGdd-_ho3eEETQsQodwBeBh0-1bXV5xC/view?usp=sharing)
+This project utilizes SQL to create a table that could be used at a company to manage employees and keep track of their roles, salary, etc. This can all be run using the console to both read the tables as well as make any additions that you might wish to make. Run the program by typing 'node index.js' in a terminal. 
 
 
 
